@@ -1,6 +1,8 @@
 {
   "name": "andrewext",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "underscore": "~1.6.0"
+  },
   "devDependencies": {}
 }
