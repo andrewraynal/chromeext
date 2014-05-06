@@ -1,11 +1,18 @@
 body {
     padding: 20px;
     font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    border: solid;
 }
 
 h1, .logo {
-	margin-left: 25px;
-	padding-left: 25px;
+	display: block;
+	margin-left: 20px;
+	box-shadow: 5px;
+}
+
+h1 {
+	text-shadow: 5px;
+
 }
 
 .musicInfo {

@@ -6,16 +6,21 @@ console.log(lovedTracks);
 $.ajax({
   dataType: "json",
   url: lovedTracks,
-  error: function(jxr, status, error) {
-},
    success: function(data) {
+    //  function getImgURL(image, size) {
+    // var i = element;
+    //   for (var i = 0; i < tracks.length; i++) {
+    //     element.image[i];
+    //     if (element.size == size) {
+    //       return element["small"];
+    //     }
+    //   }
+    // }
   	// console.log(data.tracks);
-  	var trackTempl = "<% _.each(track, function(track,index,list){ %> <li><%= track.artist.name %>, <%= track.name %></li> <% }); %>";
-  	// console.log(track.name);
+  // var image = "_.each(track, function(image, index, list){%> <li><%= track.image("small")%>
+   var trackTempl = "<% _.each(track, function(track,index,list){ %> <li><%= track.artist.name %>, <%= track.name %>, <%= track.image %></li> <% }); %>";
   	var templ = _.template(trackTempl, data.tracks);
-	
-	$(".musicInfo").append(templ);
-		console.log(templ);
+	$(".musicInfo").append(templ);	
   }
 
 });
